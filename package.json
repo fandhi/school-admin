@@ -1,0 +1,40 @@
+{
+    "name": "school-admin",
+    "version": "1.0.0",
+    "description": "Online school",
+    "main": "dist/js/bootstrap",
+    "dependencies": {
+        "bootstrap": "^4.1.1",
+        "jquery": "^3.3.1",
+        "popper.js": "^1.14.3"
+    },
+    "devDependencies": {
+        "autoprefixer": "^8.5.2",
+        "clean-css-cli": "^4.1.11",
+        "node-sass": "^4.9.0",
+        "stylelint": "^8.4.0",
+        "stylelint-config-standard": "^18.2.0",
+        "stylelint-scss": "^3.1.0"
+    },
+    "scripts": {
+        "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap.scss dist/css/bootstrap.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap-grid.scss dist/css/bootstrap-grid.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap-reboot.scss dist/css/bootstrap-reboot.css",
+        "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/bootstrap.min.css dist/css/bootstrap.css && cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/bootstrap-grid.min.css dist/css/bootstrap-grid.css && cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/bootstrap-reboot.min.css dist/css/bootstrap-reboot.css",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "style": "dist/css/bootstrap.css",
+    "sass": "scss/bootstrap.scss",
+    "files": [
+        "dist/",
+        "scss/"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fandhi/school-admin.git"
+    },
+    "author": "Safandhi Yonathan",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/fandhi/school-admin/issues"
+    },
+    "homepage": "https://github.com/fandhi/school-admin#readme"
+}
